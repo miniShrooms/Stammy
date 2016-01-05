@@ -57,8 +57,8 @@ function remTrip(session, bot, channel, cmd, args, nick, text, time, isAdmin, tr
 
 
 module.exports = {
-	verify: verifyTrip,
-	tripver: verifyTrip,
+  verify: verifyTrip,
+  tripver: verifyTrip,
   add: addTrip,
   rem: remTrip
 };
