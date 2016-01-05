@@ -97,20 +97,17 @@ fs.readdir("./commands", function(err, files)
     			}
     			
     		}
-    		if(text.indexOf("@") !== -1)
+    		if(text.indexOf("@") != -1)
     		{
-    			for(var i in bot.data.afks) 
+    			for(var i in bot.data.afks)
     			{
-                    if(text.indexOf(i) == (text.indexOf("@") + 1) && nick != i) 
-                    {
-                        out("@" + i + " is AFK " + bot.data.afks[i].reason);
-                        if(bot.data.afks[i].who.indexOf(nick) == -1) 
-                        {
-                        	bot.data.afks[i].who.push(msg);
-                        	bot.dataupdate();
-                        }
-                    }
-                }
+    				if((text.indexOf(i) == (text.indexOf("@") + 1)) && nick != i)
+    				{
+    					channel.sendMessage("@" + nick + " @" + i + " is AFK!");
+    					bot.data.afks[i].who.push(msg);
+    					bot.dataupdate();
+    				}
+    			}
     		}
     		if(text[0] == "#")
     		{
