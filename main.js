@@ -127,8 +127,8 @@ fs.readdir("./commands", function(err, files)
     });
     chat.on("info", function(session, text, time)
     {
-    	var not = "*** " + text + " ***"
- 		  console.log(not);
+    	var not = "*** " + text + " ***";
+ 	console.log(not);
     });
     chat.on("onlineAdd", function(session, nick, time)
     {
