@@ -1,0 +1,31 @@
+{
+	"name": "stammy",
+	"version": "2.2.0",
+	"description": "Hack.chat bot using Webfreak001's API",
+	"main": "main.js",
+	"dependencies":
+	{
+		"ws": "~0.7.2",
+		"fs": "latest",
+		"request": "latest",
+		"path": "latest",
+		"figlet": "latest"
+	},
+	"repository":
+	{
+		"type": "git",
+		"url": "git+https://github.com/stamsarg/Stammy.git"
+	},
+	"keywords": [
+		"hack.chat bot",
+		"hackchat bot",
+		"websocket",
+	],
+	"author": "stamsarger",
+	"license": "GNU",
+	"bugs":
+	{
+		"url": "https://github.com/stamsarg/Stammy/issues"
+	},
+	"homepage": "https://github.com/stamsarg/Stammy#readme"
+}
